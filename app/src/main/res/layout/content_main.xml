@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.aepis01.myapplication.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:id="@+id/titulo_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:hint="Título"
+        android:maxLength="55"
+        android:maxLines="1"
+        android:minLines="1"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:phoneNumber="false"
+        android:singleLine="true" />
+
+    <!-- Descripción -->
+    <EditText
+        android:id="@+id/descripcion_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo_input"
+        android:layout_centerHorizontal="true"
+        android:hint="Descripción"
+        android:maxLength="128"
+        android:nestedScrollingEnabled="true"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp" />
+
+
+</RelativeLayout>
